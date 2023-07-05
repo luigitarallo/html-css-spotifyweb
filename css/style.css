@@ -69,12 +69,20 @@
   padding: 0.5rem;
 }
 
-img {
-  width: 50px;
+.pic-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.player-author {
+.pic-author {
+  width: 50px;
+  display: inline-block;
+}
+
+.author-name {
   display: flex;
+  flex-direction: column;
 }
 
 /* 
