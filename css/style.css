@@ -61,16 +61,12 @@
   height: 100px;
   background-color: #232323;
   color: white;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  bottom: 0;
   padding: 0.5rem;
 }
 
 .pic-details {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
 }
@@ -83,6 +79,30 @@
 .author-name {
   display: flex;
   flex-direction: column;
+}
+
+.save-menu {
+  padding-left: 2rem;
+}
+
+.save-menu > i {
+  padding: 0 0.5rem;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollbar {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.player-time {
+  display: flex;
 }
 
 /* 
