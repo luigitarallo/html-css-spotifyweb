@@ -41,37 +41,48 @@
 /* ## ASIDE ## */
 
 #aside {
-  width: 50px;
+  width: 200px;
   height: calc(100vh - 100px);
   background-color: gray;
+  padding: 1rem;
+}
+
+#main-content ul {
+  list-style: none;
 }
 
 /* ## CONTENT## */
 
 #content {
-  width: calc(100vw - 50px);
+  width: calc(100% - 200px);
 }
 
 /* ##FOOTER## */
 
 #player {
+  height: 100px;
+  padding: 0.5rem;
+  color: white;
+  background-color: #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  background-color: #232323;
-  color: white;
-  padding: 0.5rem;
 }
+
+/* ALBUM COVER */
 
 .pic-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
+  width: 15%;
+  gap: 1rem;
 }
 
 .pic-author {
+  display: flex;
+}
+
+.pic-author > img {
   width: 50px;
   display: inline-block;
 }
@@ -82,26 +93,35 @@
 }
 
 .save-menu {
-  padding-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
-.save-menu > i {
-  padding: 0 0.5rem;
-}
+/* SONG CONTROLLER */
 
-.controller {
+.song-controller {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 .scrollbar {
-  height: 1px;
+  height: 2px;
   width: 100%;
+  color: white;
   background-color: white;
   border-radius: 1rem;
 }
 
 .player-time {
+  display: flex;
+  width: 60%;
+  align-content: center;
+}
+
+.vol-controller {
+  width: 15%;
   display: flex;
 }
 

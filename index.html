@@ -18,12 +18,16 @@
   </head>
   <body>
     <main id="main-content">
+      <!-- ASIDE -->
       <nav id="aside" class="bordered">
-        <div>LOGO</div>
+        <div><img class="logo" src="./img/logo.svg" alt="logo spotify" /></div>
         <ul>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
+          <li><i class="fa-solid fa-house"></i>Home</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
+          <li>
+            <i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i>La tua
+            libreria
+          </li>
         </ul>
       </nav>
 
@@ -36,19 +40,23 @@
 
     <footer id="player">
       <!-- ALBUM COVER ETC -->
-      <div class="pic-details">
-        <img class="pic-author" src="./img/sinister.jpeg" alt="sinister pic" />
-        <div class="author-name">
-          <p>Sinister</p>
-          <p>Brano Nome</p>
+      <div class="pic-details bordered">
+        <div class="pic-author">
+          <img src="./img/sinister.jpeg" alt="sinister pic" />
+          <div class="author-name bordered">
+            <span>Sinister</span>
+            <span>Brano Nome</span>
+          </div>
         </div>
-        <div class="save-menu">
+
+        <div class="save-menu bordered">
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-folder"></i>
         </div>
       </div>
+
       <!-- CONTROLLER SONG BUTTONS -->
-      <div class="controller">
+      <div class="song-controller bordered">
         <div class="player-buttons">
           <i class="fa-solid fa-shuffle"></i>
           <i class="fa-solid fa-backward-step"></i>
@@ -56,14 +64,21 @@
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-rotate-right"></i>
         </div>
-        <div class="player-time">
-          <span>0:25</span>
+        <div class="player-time bordered">
+          <div>0:25</div>
           <div class="scrollbar"></div>
-          <span>4:35</span>
+          <div>4:35</div>
         </div>
       </div>
       <!-- VOLUME CONTROLLER -->
-      <div class="bordered"></div>
+      <div class="vol-controller">
+        <div>
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-display"></i>
+          <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div class="scrollbar"></div>
+      </div>
     </footer>
   </body>
 </html>
