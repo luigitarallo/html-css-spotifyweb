@@ -46,10 +46,18 @@
 #******************
 */
 
+/* ##MAIN CONTENT## */
+
+#main-content {
+  display: flex;
+}
+
 /* ## ASIDE ## */
 
 .aside {
 }
+
+/* ## CONTENT## */
 
 /* ##FOOTER## */
 
@@ -60,3 +68,9 @@
   background-color: #232323;
   color: white;
 }
+
+/* 
+#******************
+#   RESPONSIVE    *
+#******************
+*/
