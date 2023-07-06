@@ -115,8 +115,21 @@ body {
   overflow: auto;
 }
 
+#album-collection li {
+  display: inline-block;
+  list-style: none;
+  color: var(--text-color-muted);
+  margin: 1rem;
+  font-size: 0.8rem;
+}
+
 #album-collection h2 {
   color: var(--text-color);
+  margin-left: 1rem;
+}
+
+#album-collection .menu {
+  display: flex;
 }
 
 .card img {
@@ -130,6 +143,11 @@ figcaption h4 {
   color: var(--text-color);
 }
 figcaption h5 {
+  color: var(--text-color-muted);
+}
+
+#album-collection p {
+  margin: 1rem;
   color: var(--text-color-muted);
 }
 
