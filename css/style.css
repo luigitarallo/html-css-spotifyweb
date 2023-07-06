@@ -127,7 +127,8 @@ body {
   display: block;
   width: 300px;
   background-color: white;
-  height: 3px;
+  height: 4px;
+  border-radius: 2px;
 }
 
 .player-buttons {
@@ -139,6 +140,7 @@ body {
 .player-time {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .vol-controller {
