@@ -91,7 +91,7 @@ body {
 .song-details {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .song-details > img {
@@ -116,19 +116,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.song-controls * {
-  padding: 0.1rem;
-}
-
-.scrollbar {
-  height: 2px;
+.progress-bar {
+  flex-grow: 1;
+  /* height: 2px;
   color: white;
-  background-color: white;
+  background-color: white; */
 }
 
-.player-buttons i {
+.player-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .player-time {
