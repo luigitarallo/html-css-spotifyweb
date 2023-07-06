@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <main id="main-content">
-      <!-- ASIDE -->
-      <nav id="aside" class="bordered">
+    <main id="top-content">
+      <!-- SIDEBAR -->
+      <nav id="sidebar" class="bordered">
         <div><img class="logo" src="./img/logo.svg" alt="logo spotify" /></div>
         <ul>
           <li><i class="fa-solid fa-house"></i>Home</li>
@@ -31,8 +31,10 @@
         </ul>
       </nav>
 
+      <!-- CONTENT -->
       <section id="content" class="bordered">
-        <header></header>
+        <header id="top-bar"></header>
+        <div id="album-collection"></div>
       </section>
     </main>
 
@@ -43,10 +45,10 @@
       <div class="pic-details bordered">
         <div class="pic-author">
           <img src="./img/sinister.jpeg" alt="sinister pic" />
-          <div class="author-name bordered">
-            <span>Sinister</span>
-            <span>Brano Nome</span>
-          </div>
+        </div>
+        <div class="author-name bordered">
+          <h5>Sinister</h5>
+          <h6>Brano Nome</h6>
         </div>
 
         <div class="save-menu bordered">
@@ -56,17 +58,17 @@
       </div>
 
       <!-- CONTROLLER SONG BUTTONS -->
-      <div class="song-controller bordered">
+      <div class="song-controls bordered">
         <div class="player-buttons">
           <i class="fa-solid fa-shuffle"></i>
           <i class="fa-solid fa-backward-step"></i>
-          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-regular fa-circle-play fa-2x"></i>
           <i class="fa-solid fa-forward-step"></i>
           <i class="fa-solid fa-rotate-right"></i>
         </div>
         <div class="player-time bordered">
           <div>0:25</div>
-          <div class="scrollbar"></div>
+          <div class="progress-bar-container"></div>
           <div>4:35</div>
         </div>
       </div>
