@@ -15,6 +15,7 @@
   --top-bar-line-height: 80px;
   --sidebar-width: 300px;
   --player-height: 100px;
+  --base-spacing-grid: 1rem;
 }
 
 /* 
@@ -27,6 +28,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* 
+#########################
+#         UTILS         #
+#########################
+*/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--base-spacing-grid);
+}
+
+.container .row {
+  margin-left: calc(var(--base-spacing-grid) * -1);
+  margin-right: calc(var(--base-spacing-grid) * -1);
+}
+
+.container .row .col {
+  padding: var(--base-spacing-grid);
+}
+
+.row {
+  display: flex;
 }
 
 /* 
@@ -64,11 +90,6 @@ body {
   background-color: var(--main-bg-color);
 }
 
-#content {
-  width: calc(100% - 80px);
-  overflow: auto;
-}
-
 #top-bar {
   height: var(--top-bar-heigth);
   line-height: var(--top-bar-line-height);
@@ -89,11 +110,39 @@ body {
   font-weight: bold;
 }
 
+#content {
+  width: calc(100% - 80px);
+  overflow: auto;
+}
+
+#album-collection h2 {
+  color: var(--text-color);
+}
+
+.card img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+figcaption h4 {
+  color: var(--text-color);
+}
+figcaption h5 {
+  color: var(--text-color-muted);
+}
+
 /* ## SIDEBAR ## */
 
 #sidebar {
   width: var(--sidebar-width);
   background-color: var(--sidebar-bg-color);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
 }
 
 #main-content ul {
@@ -104,6 +153,19 @@ body {
 
 #content {
   width: calc(100% - (var(--sidebar-width)));
+}
+
+/* ALBUM COLLECTION */
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+#album-collection .menu > h4 {
+  color: var(--text-color-muted);
+  margin: 1rem 1rem;
+  font-size: 0.7rem;
 }
 
 /* ##FOOTER## */
