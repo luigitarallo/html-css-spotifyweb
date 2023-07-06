@@ -149,6 +149,14 @@ body {
   border-radius: 2px;
 }
 
+.progress-bar > .song-progress {
+  display: block;
+  background-color: white;
+  height: 4px;
+  border-radius: 2px;
+  width: 30%;
+}
+
 .vol-controller {
   display: flex;
 }
