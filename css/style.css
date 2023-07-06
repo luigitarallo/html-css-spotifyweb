@@ -83,14 +83,12 @@ body {
   background-color: #232323;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* SONG DETAILS */
 
 .song-details {
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -112,11 +110,19 @@ body {
 
 /* SONG CONTROLS  */
 
-.song-controls {
+.player-buttons {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2rem;
+  height: 50%;
+}
+
+.player-time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 50%;
 }
 
 .progress-bar-container {
@@ -129,18 +135,6 @@ body {
   background-color: white;
   height: 4px;
   border-radius: 2px;
-}
-
-.player-buttons {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.player-time {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .vol-controller {
