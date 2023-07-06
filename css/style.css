@@ -91,6 +91,7 @@ body {
 .song-details {
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .song-details > img {
@@ -115,7 +116,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
 }
 
 .song-controls * {
@@ -124,13 +124,11 @@ body {
 
 .scrollbar {
   height: 2px;
-  width: 100%;
   color: white;
   background-color: white;
 }
 
 .player-buttons i {
-  padding: 1rem;
 }
 
 .player-time {
