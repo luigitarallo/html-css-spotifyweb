@@ -119,11 +119,15 @@ body {
   gap: 0.5rem;
 }
 
-.progress-bar {
+.progress-bar-container {
   flex-grow: 1;
-  /* height: 2px;
-  color: white;
-  background-color: white; */
+}
+
+.progress-bar {
+  display: block;
+  width: 300px;
+  background-color: white;
+  height: 3px;
 }
 
 .player-buttons {
