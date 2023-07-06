@@ -51,6 +51,8 @@ body {
 
 #top-bar {
   height: 80px;
+  line-height: 80px;
+  text-align: right;
   position: sticky;
   top: 0;
   right: 0;
@@ -132,7 +134,7 @@ body {
 .progress-bar {
   display: block;
   width: 300px;
-  background-color: white;
+  background-color: grey;
   height: 4px;
   border-radius: 2px;
 }
