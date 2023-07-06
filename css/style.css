@@ -16,6 +16,10 @@
 ################
 */
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* 
 #******************
 #     DEBUG       *
@@ -106,6 +110,10 @@
   width: 70%;
 }
 
+.song-controller * {
+  padding: 0.1rem;
+}
+
 .scrollbar {
   height: 2px;
   width: 100%;
@@ -117,7 +125,7 @@
 .player-time {
   display: flex;
   width: 60%;
-  align-content: center;
+  align-items: center;
 }
 
 .vol-controller {
