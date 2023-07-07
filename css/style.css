@@ -313,6 +313,11 @@ figcaption h5 {
   width: 30%;
 }
 
+.song-progress:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
 /* VOLUME CONTROLS */
 
 .vol-controls {
@@ -341,6 +346,11 @@ figcaption h5 {
   height: 4px;
   border-radius: 2px;
   width: 30%;
+}
+
+.volume-level:hover {
+  background-color: green;
+  cursor: pointer;
 }
 
 /* 
