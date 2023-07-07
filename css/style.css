@@ -226,6 +226,14 @@ figcaption h5 {
   width: 75%;
 }
 
+.library-list-links {
+  margin-bottom: 1rem;
+}
+
+.sidebar-playlist {
+  margin-top: 1rem;
+}
+
 #sidebar li {
   font-size: 1rem;
   padding: 0;
