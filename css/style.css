@@ -171,7 +171,7 @@ ul {
 
 #album-collection .col {
   width: calc(100% / 6);
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .popular-arstist img {
@@ -362,10 +362,32 @@ figcaption h5 {
 #******************
 */
 
-/* ##MOBILE## */
+/* ##MEDIUM## */
+
+@media screen and (max-width: 992px) {
+  #album-collection .col {
+    width: calc(100% / 4);
+    min-width: 60px;
+  }
+}
+
+/* ##SMALL## */
+
+@media screen and (max-width: 768px) {
+  #album-collection .col {
+    width: calc(100% / 2);
+    min-width: 40px;
+  }
+}
+
+/* ##X-SMALL## */
 
 @media screen and (max-width: 576px) {
   :root {
     --sidebar-width: 50px;
+  }
+
+  #album-collection .col {
+    width: calc(100% / 2);
   }
 }
