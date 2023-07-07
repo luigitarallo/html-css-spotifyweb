@@ -171,6 +171,7 @@ ul {
 
 #album-collection .col {
   width: calc(100% / 6);
+  min-width: 200px;
 }
 
 .popular-arstist img {
@@ -226,11 +227,13 @@ figcaption h5 {
 }
 
 #sidebar li {
-  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0;
 }
 
 #sidebar svg {
-  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
 }
 
 /* ##FOOTER## */
