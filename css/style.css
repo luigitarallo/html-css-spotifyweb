@@ -244,7 +244,8 @@ figcaption h5 {
   vertical-align: middle;
 }
 
-.sidebar-xs {
+.sidebar-xs-top,
+.sidebar-xs-bottom {
   display: none;
 }
 
@@ -394,6 +395,8 @@ figcaption h5 {
 
 /* ##X-SMALL## */
 
+/* SIDEBAR */
+
 @media screen and (max-width: 576px) {
   :root {
     --sidebar-width: 50px;
@@ -408,5 +411,10 @@ figcaption h5 {
   .sidebar-playlist,
   .user-section {
     display: none;
+  }
+
+  .sidebar-xs-top,
+  .sidebar-xs-bottom {
+    display: block;
   }
 }
