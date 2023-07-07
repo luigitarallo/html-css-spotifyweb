@@ -29,12 +29,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
 
 img {
   max-width: 100%;
 }
 
 a {
+  color: var(--text-color-muted);
   text-decoration: none;
 }
 
@@ -73,11 +79,6 @@ ul {
 #        LAYOUT         #
 #########################
 */
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--main-bg-color);
-}
 
 /* 
 #******************
@@ -213,9 +214,8 @@ figcaption h5 {
   color: var(--text-color);
 }
 
-#sidebar .library-list img {
-  display: inline-block;
-  width: 2rem;
+#sidebar .library-list svg {
+  font-size: 1rem;
 }
 
 /* ##FOOTER## */
