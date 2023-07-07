@@ -200,6 +200,8 @@ figcaption h5 {
 #sidebar {
   width: var(--sidebar-width);
   background-color: var(--sidebar-bg-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
