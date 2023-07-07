@@ -249,6 +249,11 @@ figcaption h5 {
   display: none;
 }
 
+.sidebar-xs-top svg {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ##FOOTER## */
 
 #player {
@@ -413,7 +418,7 @@ figcaption h5 {
     display: none;
   }
 
-  .sidebar-xs-top,
+  #sidebar .sidebar-xs-top,
   .sidebar-xs-bottom {
     display: block;
   }
