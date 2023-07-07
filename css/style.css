@@ -213,6 +213,11 @@ figcaption h5 {
   line-height: var(--top-bar-line-height);
 }
 
+.logo img {
+  vertical-align: middle;
+  width: 75%;
+}
+
 #sidebar li {
   color: var(--text-color);
 }
