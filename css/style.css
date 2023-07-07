@@ -157,7 +157,7 @@ body {
 }
 
 .card img {
-  width: 100%;
+  width: var(--cover-pixel-image);
 }
 
 .popular-arstist img {
@@ -170,10 +170,6 @@ body {
 .popular-arstist img {
   width: var(--cover-pixel-image);
   height: var(--cover-pixel-image);
-}
-
-figure {
-  width: 100%;
 }
 
 figcaption {
@@ -223,7 +219,7 @@ figcaption h5 {
 }
 
 .song-details > img {
-  width: 100%;
+  width: 75px;
   height: auto;
 }
 
