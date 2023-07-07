@@ -16,7 +16,7 @@
   --sidebar-width: 300px;
   --player-height: 100px;
   --base-spacing-grid: 1rem;
-  --cover-pixel-image: 200px;
+  --cover-pixel-image: 230px;
 }
 
 /* 
@@ -148,7 +148,7 @@ body {
 
 #album-collection h2 {
   color: var(--text-color);
-  margin-left: 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 
 #album-collection p {
@@ -196,8 +196,18 @@ figcaption h5 {
 }
 
 .logo {
-  max-width: 100%;
-  height: auto;
+  width: 13rem;
+  padding: 1rem 3rem 2rem 1rem;
+}
+
+#sidebar li {
+  color: var(--text-color);
+  list-style: none;
+}
+
+#sidebar .library-list img {
+  display: inline-block;
+  width: 2rem;
 }
 
 /* ##FOOTER## */
