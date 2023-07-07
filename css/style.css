@@ -205,6 +205,10 @@ figcaption h5 {
   flex-direction: column;
 }
 
+#sidebar div:last-child {
+  margin-top: auto;
+}
+
 .logo {
   width: 13rem;
   padding: 1rem 3rem 2rem 1rem;
