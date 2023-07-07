@@ -204,7 +204,7 @@ figcaption h5 {
   background-color: var(--sidebar-bg-color);
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  padding: 0 1rem;
   overflow: auto;
 }
 
