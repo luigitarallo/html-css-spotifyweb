@@ -219,8 +219,7 @@ figcaption h5 {
 }
 
 .song-details > img {
-  width: 75px;
-  height: auto;
+  width: 80px;
 }
 
 .song-name {
@@ -236,6 +235,10 @@ figcaption h5 {
 
 .player-icons i {
   padding: 0.6rem;
+}
+
+.song-details .player-icons {
+  color: var(--text-color-muted);
 }
 
 /* SONG CONTROLS  */
