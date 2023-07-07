@@ -244,6 +244,10 @@ figcaption h5 {
   vertical-align: middle;
 }
 
+.sidebar-xs {
+  display: none;
+}
+
 /* ##FOOTER## */
 
 #player {
@@ -397,5 +401,12 @@ figcaption h5 {
 
   #album-collection .col {
     width: calc(100% / 2);
+  }
+
+  #sidebar .logo,
+  .library-list-links,
+  .sidebar-playlist,
+  .user-section {
+    display: none;
   }
 }
