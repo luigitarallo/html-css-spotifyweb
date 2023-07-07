@@ -31,6 +31,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 /* 
 #########################
 #         UTILS         #
@@ -101,10 +109,6 @@ body {
   right: 0;
 }
 
-#main-content ul {
-  list-style: none;
-}
-
 .upgrade-button {
   margin-right: 1rem;
   color: white;
@@ -140,7 +144,6 @@ body {
 
 #album-collection .menu li {
   display: inline-block;
-  list-style: none;
   color: var(--text-color-muted);
   margin: 1rem;
   font-size: 0.8rem;
@@ -202,7 +205,6 @@ figcaption h5 {
 
 #sidebar li {
   color: var(--text-color);
-  list-style: none;
 }
 
 #sidebar .library-list img {
