@@ -150,10 +150,6 @@ ul {
   justify-content: center;
 }
 
-/* #album-collection .menu {
-  display: flex;
-} */
-
 #album-collection .menu ul {
   display: flex;
 }
@@ -236,7 +232,7 @@ figcaption h5 {
   overflow: auto;
 }
 
-#sidebar div:last-child {
+#sidebar .user-section {
   margin-top: auto;
 }
 
