@@ -239,6 +239,7 @@ figcaption h5 {
   top: 0;
   right: 0;
   background-color: var(--header-bg-color);
+  cursor: pointer;
 }
 
 .layover > i {
@@ -359,10 +360,37 @@ figcaption h5 {
   height: 50%;
 }
 
+.song-time {
+  font-size: 0.9rem;
+}
+
 /* PROGRESS BAR */
 
 .progress-bar-container {
   flex-grow: 1;
+}
+
+.progress-bar {
+  display: block;
+  width: 300px;
+  background-color: var(--text-color-muted);
+  height: 5px;
+  border-radius: 4px;
+}
+
+.progress-bar > .song-progress {
+  display: block;
+  background-color: var(--text-color);
+  height: 5px;
+  border-radius: 4px;
+  width: 30%;
+  position: relative;
+}
+
+.progress-bar:hover .song-progress {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  display: block;
 }
 
 .cursor {
@@ -375,29 +403,6 @@ figcaption h5 {
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.progress-bar {
-  display: block;
-  width: 300px;
-  background-color: var(--text-color-muted);
-  height: 5px;
-  border-radius: 2px;
-}
-
-.progress-bar > .song-progress {
-  display: block;
-  background-color: var(--text-color);
-  height: 5px;
-  border-radius: 2px;
-  width: 30%;
-  position: relative;
-}
-
-.progress-bar:hover .song-progress {
-  background-color: var(--hover-color);
-  cursor: pointer;
-  display: block;
 }
 
 .progress-bar:hover .cursor {
@@ -423,14 +428,14 @@ figcaption h5 {
   width: 100px;
   background-color: var(--text-color-muted);
   height: 5px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .volume-bar > .volume-level {
   display: block;
   background-color: var(--text-color);
   height: 5px;
-  border-radius: 2px;
+  border-radius: 4px;
   width: 30%;
   position: relative;
 }
@@ -453,33 +458,83 @@ figcaption h5 {
 /* ##MEDIUM## */
 
 @media screen and (max-width: 992px) {
+  /* ALBUM COLLECTION */
   #album-collection .col {
     width: calc(100% / 4);
     min-width: 60px;
+  }
+
+  /* FOOTER */
+  .player-buttons {
+    gap: 1rem;
+  }
+
+  .song-details {
+    gap: 0.7rem;
+  }
+
+  .progress-bar {
+    width: 250px;
+  }
+
+  .player-icons i {
+    padding: 0.5rem;
+  }
+
+  .song-time {
+    font-size: 0.7rem;
   }
 }
 
 /* ##SMALL## */
 
 @media screen and (max-width: 768px) {
+  /* ALBUM COLLECTION */
   #album-collection .col {
     width: calc(100% / 2);
     min-width: 40px;
   }
+
+  /* FOOTER */
+  .player-buttons {
+    gap: 0.5rem;
+  }
+
+  .player-icons {
+    flex-wrap: wrap;
+  }
+
+  .song-details {
+    gap: 0.5rem;
+  }
+
+  .progress-bar {
+    width: 200px;
+  }
+
+  .player-icons i {
+    padding: 0.4rem;
+  }
+
+  .volume-controls {
+    flex-wrap: wrap;
+  }
 }
 
 /* ##X-SMALL## */
-
-/* SIDEBAR */
 
 @media screen and (max-width: 576px) {
   :root {
     --sidebar-width: 50px;
   }
 
+  /* ALBUM COLLECTION */
+
   #album-collection .col {
     width: calc(100% / 2);
   }
+
+  /* SIDEBAR */
 
   #sidebar .logo,
   .library-list-links,
