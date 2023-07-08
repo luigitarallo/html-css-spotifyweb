@@ -245,6 +245,10 @@ figcaption h5 {
   font-size: 4rem;
 }
 
+.popular-arstist .layover {
+  border-radius: 50%;
+}
+
 /* ## SIDEBAR ## */
 
 #sidebar {
