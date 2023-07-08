@@ -11,6 +11,7 @@
   --sidebar-bg-color: #000000;
   --player-bg-color: #282828;
   --header-bg-color: rgba(0, 0, 0, 0.5);
+  --hover-color: rgb(61, 255, 61);
   --top-bar-heigth: 80px;
   --top-bar-line-height: 80px;
   --sidebar-width: 300px;
@@ -142,22 +143,44 @@ ul {
 
 /* ALBUM COLLECTION */
 
-/* MENU */
+/* ALBUM COLLECTION MENU */
+
 .menu {
   display: flex;
   justify-content: center;
 }
 
-#album-collection .menu {
+/* #album-collection .menu {
+  display: flex;
+} */
+
+#album-collection .menu ul {
   display: flex;
 }
 
-#album-collection .menu li {
-  display: inline-block;
+#album-collection .menu .menu-item {
+  position: relative;
   color: var(--text-color-muted);
   margin: 1rem;
   font-size: 0.8rem;
 }
+
+#album-collection .menu .hovered {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: block;
+  width: 50%;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+
+#album-collection .menu li:hover .hovered {
+  background-color: var(--hover-color);
+}
+
+/* ALBUM COLLECTION GALLERY*/
 
 #album-collection h2 {
   color: var(--text-color);
@@ -348,7 +371,7 @@ figcaption h5 {
 }
 
 .progress-bar:hover .song-progress {
-  background-color: rgb(61, 255, 61);
+  background-color: var(--hover-color);
   cursor: pointer;
   display: block;
 }
@@ -389,7 +412,7 @@ figcaption h5 {
 }
 
 .volume-bar:hover .volume-level {
-  background-color: rgb(61, 255, 61);
+  background-color: var(--hover-color);
   cursor: pointer;
 }
 
