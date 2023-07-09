@@ -126,6 +126,11 @@ ul {
   border-radius: 20px;
   padding: 0.6rem 2rem;
   font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.upgrade-button:hover {
+  transform: scale(1.1);
 }
 
 /* ALBUM COLLECTION */
@@ -428,8 +433,9 @@ figcaption h5 {
   height: 50%;
 }
 
-.fa-circle-play:hover {
-  font-size: 2.5rem;
+.player-buttons i:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .player-time {
