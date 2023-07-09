@@ -339,7 +339,6 @@ figcaption h5 {
 .download-icon {
   height: 1.2rem;
   margin-right: 0.5rem;
-  cursor: pointer;
 }
 
 .user-image {
@@ -352,6 +351,8 @@ figcaption h5 {
   padding: 0.1rem;
 }
 
+/* SIDEBAR XS */
+
 .sidebar-xs-top,
 .sidebar-xs-bottom {
   display: none;
@@ -360,6 +361,20 @@ figcaption h5 {
 .sidebar-xs-top svg {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.sidebar-xs-bottom {
+  margin-top: auto;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-xs-bottom .user-image {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-xs-bottom .download-icon {
+  margin-bottom: 2rem;
 }
 
 /* ##FOOTER## */
@@ -411,6 +426,10 @@ figcaption h5 {
   align-items: center;
   gap: 2rem;
   height: 50%;
+}
+
+.fa-circle-play:hover {
+  font-size: 2.5rem;
 }
 
 .player-time {
@@ -594,6 +613,4 @@ figcaption h5 {
   .sidebar-xs-bottom {
     display: block;
   }
-
-  /* FOOTER */
 }
