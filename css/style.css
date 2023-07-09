@@ -87,16 +87,6 @@ ul {
 
 /* 
 #******************
-#     DEBUG       *
-#******************
-*/
-
-.bordered {
-  border: 2px dashed orangered;
-}
-
-/* 
-#******************
 #    SECTIONS     *
 #******************
 */
@@ -110,12 +100,20 @@ ul {
   overflow: hidden;
 }
 
+/* ## CONTENT## */
+
+#content {
+  width: calc(100% - (var(--sidebar-width)));
+  overflow: auto;
+}
+
 #top-bar {
   height: var(--top-bar-heigth);
   line-height: var(--top-bar-line-height);
   background-color: var(--header-bg-color);
   text-align: right;
   position: sticky;
+  z-index: 2;
   top: 0;
   right: 0;
 }
@@ -128,17 +126,6 @@ ul {
   border-radius: 20px;
   padding: 0.6rem 2rem;
   font-weight: bold;
-}
-
-/* ## CONTENT## */
-
-#content {
-  width: calc(100% - (var(--sidebar-width)));
-}
-
-#content {
-  width: calc(100% - var(--top-bar-heigth));
-  overflow: auto;
 }
 
 /* ALBUM COLLECTION */
@@ -192,7 +179,7 @@ ul {
 
 #album-collection .col {
   width: calc(100% / 6);
-  min-width: 180px;
+  min-width: 140px;
 }
 
 .popular-arstist img {
@@ -261,35 +248,108 @@ figcaption h5 {
   overflow: auto;
 }
 
-#sidebar .user-section {
-  margin-top: auto;
-}
-
-.logo {
+#sidebar .logo {
   line-height: var(--top-bar-line-height);
 }
 
-.logo img {
+#sidebar .logo img {
   vertical-align: middle;
   width: 75%;
+}
+
+#sidebar .library-list-links svg {
+  height: 1.2rem;
+  vertical-align: middle;
+}
+
+#sidebar li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
 .library-list-links {
   margin-bottom: 1rem;
 }
 
+.sidebar-playlist ul {
+  overflow: auto;
+  height: calc(100vh - 510px);
+  min-height: 80px;
+}
+
+.add-playlist {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.add-playlist:hover .add-playlist-button {
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.add-playlist-button {
+  width: 2.5rem;
+  line-height: 2.5rem;
+  background-color: var(--text-color-muted);
+  font-size: 2.5rem;
+  border: none;
+}
+
+.add-playlist label {
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 0.5rem;
+  color: var(--text-color-muted);
+  cursor: pointer;
+}
+
+.add-playlist:hover label {
+  color: var(--text-color);
+}
+
 .sidebar-playlist {
   margin-top: 1rem;
 }
 
-#sidebar li {
-  font-size: 1rem;
-  padding: 0;
+#sidebar .user-section {
+  margin-top: auto;
+  padding: 1rem 0;
 }
 
-#sidebar svg {
-  height: 1rem;
-  vertical-align: middle;
+.download-section {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--text-color-muted);
+  color: var(--text-color-muted);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+}
+
+.download-section:hover .install-text {
+  color: var(--text-color);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.download-icon {
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  background-color: var(--text-color-muted);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  padding: 0.1rem;
 }
 
 .sidebar-xs-top,
@@ -317,7 +377,6 @@ figcaption h5 {
 
 .song-details {
   display: flex;
-  gap: 1rem;
 }
 
 .song-details > img {
@@ -328,6 +387,7 @@ figcaption h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 0.5rem;
 }
 
 .player-icons {
@@ -414,7 +474,6 @@ figcaption h5 {
 .vol-controls {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .volume-bar-container {
@@ -461,18 +520,10 @@ figcaption h5 {
   /* ALBUM COLLECTION */
   #album-collection .col {
     width: calc(100% / 4);
-    min-width: 60px;
+    min-width: 130px;
   }
 
   /* FOOTER */
-  .player-buttons {
-    gap: 1rem;
-  }
-
-  .song-details {
-    gap: 0.7rem;
-  }
-
   .progress-bar {
     width: 250px;
   }
@@ -492,7 +543,6 @@ figcaption h5 {
   /* ALBUM COLLECTION */
   #album-collection .col {
     width: calc(100% / 2);
-    min-width: 40px;
   }
 
   /* FOOTER */
@@ -500,24 +550,21 @@ figcaption h5 {
     gap: 0.5rem;
   }
 
-  .player-icons {
-    flex-wrap: wrap;
-  }
-
   .song-details {
     gap: 0.5rem;
-  }
-
-  .progress-bar {
-    width: 200px;
   }
 
   .player-icons i {
     padding: 0.4rem;
   }
 
-  .volume-controls {
-    flex-wrap: wrap;
+  .song-details,
+  .vol-controls {
+    display: none;
+  }
+
+  #player {
+    justify-content: center;
   }
 }
 
@@ -547,4 +594,6 @@ figcaption h5 {
   .sidebar-xs-bottom {
     display: block;
   }
+
+  /* FOOTER */
 }
