@@ -16,7 +16,9 @@ _Boolean exercise with responsive layout_
 ## ScreenShot
 
 **Desktop**
+
 ![Alt text](img/spotify-screenshot.png)
 
 **Mobile**
+
 ![Alt text](img/spotify-screenshot-sm.png)
